@@ -1,0 +1,13 @@
+#https://cyberdefenderdavid.github.io/mc-server-latest/data/mc-latest.json
+
+#curl -s https://cyberdefenderdavid.github.io/mc-server-latest/data/mc-latest.json \
+#| grep '"jar_url"' \
+#| cut -d '"' -f4
+
+___
+
+#curl -s https://cyberdefenderdavid.github.io/mc-server-latest/data/mc-latest.json \
+#| grep '"jar_url"' \
+#| awk -F': ' '{print $2}' \
+#| tr -d '",'
+
